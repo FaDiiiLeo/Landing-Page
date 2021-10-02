@@ -17,6 +17,18 @@ body{
     padding: 20px 200px;
 }
 
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    display: inline;
+    width: 100%;
+    max-width: 48px;
+    height: auto;
+}
+
 .header h1{
     font-size: 24px;
     color: #F9FAF8;
@@ -33,6 +45,10 @@ body{
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.header a:hover{
+    color: #9299a3;
 }
 
 .section1{
@@ -65,16 +81,24 @@ body{
     cursor: pointer;
     font-size: 16px;
     background-color: #3882F6;
+    transition: 0.2s;
+}
+
+.section1 button:hover{
+    background-color: #2655a0;
 }
 
 .section1 img{
     width: 100%;
     max-width: 400px;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.637);
 }
 
 .images img{
-    width: auto;
+    width: 100%;
+    max-width: 300px;
     height: 150px;
 }
 
@@ -154,6 +178,12 @@ body{
     border: 2px solid white;
     border-radius: 12px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.card button:hover{
+    background-color: white;
+    color: #3882F6;
 }
 
 .footer{
@@ -162,4 +192,8 @@ body{
     font-size: 18px;
     text-align: center;
     padding: 50px 0px;
+}
+
+.attribution a{
+    color: #3882F6;
 }
