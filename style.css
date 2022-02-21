@@ -20,6 +20,8 @@ body{
 .header-logo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .header img{
@@ -209,7 +211,8 @@ body{
         margin: 20px;
     }
     .section4 .card{
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     .card button{
         margin-top: 10px;
@@ -250,6 +253,9 @@ body{
         padding: 20px 130px;
         text-align: center;
     }
+    .header-logo{
+        padding-right: 40px;
+    }
     .section1{
         padding: 50px 100px;
     }
@@ -259,12 +265,35 @@ body{
     .section3{
         padding: 90px 170px;
     }
+    .section3 blockquote{
+        font-size: 28px;
+        text-align: center;
+    }
+    .section3 p{
+        font-size: 20px;
+    }
+    .section4 .card-info{
+        text-align: center;
+    }
+    .section4 .card{
+        padding: 50px;
+    }
 }
 
 @media all and (max-width: 665px){
     .header{
-        padding: 20px 20px;
         text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-logo{
+        padding: 0;
+    }
+    .header ul{
+        padding: 20px 0px;
+    }
+    ul li{
+        padding: 0px 20px;
     }
     .section1{
         padding: 50px 100px;
@@ -283,6 +312,13 @@ body{
     .section3{
         padding: 90px 100px;
     }
+    .section3 blockquote{
+        font-size: 28px;
+        text-align: center;
+    }
+    .section3 p{
+        font-size: 20px;
+    }
     .section4{
         padding: 80px 80px;
     }
@@ -291,9 +327,6 @@ body{
 @media all and (max-width: 425px){
     body{
         text-align: center;
-    }
-    .header{
-        padding: 20px 10px;
     }
     .section1{
         padding: 50px 50px;
